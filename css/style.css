@@ -98,7 +98,7 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(img/herobanner.jpg);
+  background-image: url(../img/masjid.jpg );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -285,12 +285,6 @@ element.style {
   margin-left: 70%;
 }
 
-.about .misi .icon {
-  display: flex;
-  gap: 150px;
-  margin-left: 70%;
-}
-
 .about .misi .icon i {
   margin-top: 30px;
 }
@@ -431,7 +425,7 @@ footer .socials a {
 }
 
 footer .socials a:hover {
-    color: var(--kuning);
+  color: var(--kuning);
 }
 
 footer .links {
@@ -445,10 +439,10 @@ footer .links a {
   font-size: 1rem;
   transition: 0.3s ease;
 }
- 
+
 footer .links a:hover {
-    color: var(--kuning);
-    transform: scale(1.1);
+  color: var(--kuning);
+  transform: scale(1.1);
 }
 
 footer .credit {
@@ -529,7 +523,7 @@ footer .credit a {
   }
 
   .keterangan p {
-    width: 500px;
+    width: 490px;
     padding-top: 30px;
     text-align: center;
     margin: 0 auto;
@@ -557,22 +551,40 @@ footer .credit a {
     margin: 0 auto;
   }
 
+  .about .visi .icon i {
+    font-size: 75px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .about .visi .icon {
+    margin-right: 10px;
+    gap: 0px;
+  }
+
   .visi .visip {
-    text-align: center;
     padding-top: 15px;
     margin: 0 auto;
+    width: 400px;
   }
 
   .misi {
-    padding-top: 5em;
+    padding-top: 3em;
     margin: 0 auto;
   }
 
-  .misi ul {
-    margin: 0 auto;
-    width: 480px;
-    padding-top: 15px;
-    padding-left: 40px;
+  .about .misi .icon {
+    margin-left: 10px;
+    gap: 30px;
+  }
+
+  .about .misi .icon i {
+    font-size: 75px;
+    margin-top: 60px;
+  }
+
+  .misi ul li{
+    width: 400px;
   }
 
   .contact .row {
@@ -604,4 +616,6 @@ footer .credit a {
   html {
     font-size: 55%;
   }
+
+  
 }
