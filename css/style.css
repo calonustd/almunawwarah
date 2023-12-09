@@ -198,9 +198,11 @@ section .garis {
 }
 
 .keterangan p {
-  padding-left: 50px;
-  width: 650px;
-  padding-top: 60px;
+  width: 600px;
+  padding-top: 40px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .keterangan {
@@ -293,7 +295,7 @@ element.style {
   display: flex;
   gap: 90px;
   align-items: center;
-  margin-left: 4.3em;
+  margin-left: 6.3em;
   margin-top: 30px;
 }
 
@@ -463,9 +465,161 @@ footer .credit a {
 }
 
 /* Ukuran tablet */
-@media (max-width: 758px) {
+@media (max-width: 958px) {
   html {
     font-size: 72.5%;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--biruagaktua);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .bg {
+    background-color: var(--transparan);
+    box-shadow: 0px 15px 55px #00000040;
+    height: 720px;
+  }
+
+  .about .keterangan {
+    padding-top: 47px;
+    width: auto;
+    height: 400px;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+
+  .keterangan img {
+    width: 400px;
+    height: 290px;
+    margin: 0 auto;
+  }
+
+  .keterangan p {
+    width: 500px;
+    padding-top: 25px;
+  }
+
+
+  .visi .visih2,
+  .misi .misih2 {
+    width: 2em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .misi {
+    width: 500px;
+    text-align: left;
+    margin-top: -65px;
+  }
+
+  .visi .garisvisi,
+  .misi .garismisi {
+    border-radius: 20%;
+    width: 150px;
+    border: 1px solid var(--biruagaktua);
+    margin: 0 auto;
+  }
+
+  .about .visi .icon i {
+    font-size: 75px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .about .visi .icon {
+    margin-right: 30px;
+    gap: 0px;
+    padding: 0;
+  }
+
+  .visi .visip {
+    padding-top: 0;
+    margin-right: 0;
+    width: 400px;
+  }
+
+  .misi {
+    padding-top: 3em;
+    margin: 0 auto;
+  }
+
+  .about .misi .icon {
+    margin-left: -5px;
+    gap: 50px;
+  }
+
+  .about .misi .icon i {
+    font-size: 75px;
+    margin-top: 60px;
+  }
+
+  .misi ul li{
+    width: 400px;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+
+  .program .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+  .visi i {
+    flex-direction: column-reverse;
+    font-size: 120px;
+    margin-left: 150px;
+  }
+}
+
+/* Ukuran mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 
   #hamburger {
@@ -558,8 +712,9 @@ footer .credit a {
   }
 
   .about .visi .icon {
-    margin-right: 10px;
+    margin-right: 30px;
     gap: 0px;
+    padding: 0;
   }
 
   .visi .visip {
@@ -609,13 +764,5 @@ footer .credit a {
     font-size: 120px;
     margin-left: 150px;
   }
-}
-
-/* Ukuran mobile */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-
   
 }
